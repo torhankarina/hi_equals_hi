@@ -6,7 +6,7 @@
 #include "../src/hello.hpp"
 
 TEST_CASE( "Case-insensitive string comparison") {
-    REQUIRE( strcmp_case_insensitive("String one", "string two") <0 );
+    REQUIRE( strcmp_case_insensitive("String one", "string two") < 0 );
     REQUIRE( strcmp_case_insensitive("String one", "string one") == 0 );
     REQUIRE( strcmp_case_insensitive("String two", "string one") > 0);
     REQUIRE( strcmp_case_insensitive("abc", "ABC") == 0 );
